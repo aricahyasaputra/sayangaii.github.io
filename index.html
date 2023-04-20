@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://dekatutorial.github.io/styleGombalin.css"
+      href="stylesheet\stylebase.css"
     />
     <link
       rel="stylesheet"
-      href="https://dekatutorial.github.io/stylePopUp.css"
+      href="stylesheet\stylesheetpopup.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Subscribe YT Nais ID</title>
+    <title>Anniversary Aii Ted 4 Tahunnnnnnn</title>
   </head>
 
   <body id="body">
@@ -37,14 +37,17 @@
     <div id="bg"></div>
     <img src="" alt="" id="fotoku" />
 
-    <h2 id="hai">Hai Kamu!</h2>
-    <h3 id="hia">Scrool kesamping ya</h3>
+    <h2 id="hai">Aiikane Teted! 🧸❤️</h2>
+    <h3 id="hia">Scrool kesamping yaa sayang</h3>
 
     <div id="slider">
-      <p>Kalimat satu</p>
-      <p>Kalimat dua</p>
-      <p><img src="assets\20190228_154555.jpg" style="width:auto;height:120px;" /></p>
-      <p>Klik kado nya<span>🎁</span></p>
+      <p>Sayang terima kasih 4 tahunnya ya, Tedd seneng banget mulai kene cedak soko durung ono hubungan, sampai saiki iso meluangke wektu bareng aii</p>
+      <p><img src="assets\20190228_154555.jpg" style="width:auto;height:500px;" /></p>
+      <p>Maafe nek tedd tipikal seng sederhana, tapi tedd janji selalu berusaha nggawe aiine senyum bahagia</p>
+      <p><img src="assets\20181126_144124.jpg" style="width:auto;height:500px;" /></p>
+      <p>Tetaplah tersenyum aii, maafe nek awal awal kae sikap e tedd gak seng seperti dikarepke aii, tapi tedd janji segala proses gak bakal sia-sia</p>
+      <p><img src="assets\IMG-20180813-WA0012.jpeg" style="width:auto;height:500px;" /></p>
+      <p>Klik kado nya dari Tedd 🧸<span>🎁</span></p>
     </div>
   </body>
   <script>
@@ -54,7 +57,7 @@
     noWhatsapp = "+628985650758";
 
     async function popUp() {
-      await swalo.fire({ title: "", imageUrl: "" });
+      await swalo.fire({ title: "Kadonya kita kesiniiiiii ❤️", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/19/OYO_Rooms_%28logo%29.png" });
       kirimPesan();
     }
 
@@ -70,19 +73,19 @@
     var swalo = Swal.mixin({ allowOutsideClick: false });
     async function kirimPesan() {
       var { value: pesan } = await swalo.fire({
-        title: "Tulis pesan",
+        title: "Kirim tanggal mainnya ke Teteddd 🧸❤️",
         input: "text",
         confirmButtonText: "Kirim",
       });
       if (pesan) {
-        await swalo.fire("Kirim ke wa aku ya jawaban nya");
+        await swalo.fire("Kirim ke wa tedd ya jawaban nya");
         location.assign(
           "https://api.whatsapp.com/send?phone=" + noWhatsapp + "&text=" + pesan
         );
       } else {
         await swalo.fire({
-          confirmButtonText: "Iya deh",
-          title: "Jangan dikosongin ya :)",
+          confirmButtonText: "Ayoo gas saiki",
+          title: "Gak olehh kosonggg :(",
         });
         kirimPesan();
       }
